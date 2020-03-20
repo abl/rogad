@@ -1,0 +1,13 @@
+[package]
+name = "rogad"
+version = "0.1.0"
+authors = ["Alexander Lash <alex@lash.io>"]
+edition = "2018"
+
+[profile.release]
+lto = true
+panic = 'abort'
+codegen-units = 1
+
+[dependencies]
+evdev-rs = "0.3.1"
